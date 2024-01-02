@@ -5,3 +5,4 @@ cache/*.*
 public/assets/**/*.*
 public/assets/**/*.*
 !public/assets/**/.gitkeep
+.DS_Store
