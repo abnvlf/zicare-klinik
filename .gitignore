@@ -2,7 +2,11 @@ vendor
 .phalcon
 cache/*.*
 !cache/.gitkeep
+app/log/*.*
+!app/log/.gitkeep
 public/assets/**/*.*
 public/assets/**/*.*
 !public/assets/**/.gitkeep
+!public/assets/**/.gitkeep
+!public/assets/**/component/*
 .DS_Store

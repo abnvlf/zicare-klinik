@@ -1,10 +1,21 @@
 <?php
 
+use Phalcon\Assets\Filters\Jsmin;
 use Phalcon\Http\Request;
 use Phalcon\Http\Response;
 
 class IndexController extends ControllerBase
 {
+    public function initialize()
+    {
+        parent::initialize();
+        $this->assets
+            ->collection('zivue_index')
+            ->setTargetPath('assets/js/zivue_index.js')
+            ->setTargetUri('assets/js/zivue_index.js')
+            ->addJs('assets/js/component/test-index.vue.js', true, false)
+            ->addFilter(new Jsmin());
+    }
 
     public function indexAction()
     {
