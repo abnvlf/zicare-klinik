@@ -1,0 +1,7 @@
+vendor
+.phalcon
+cache/*.*
+!cache/.gitkeep
+public/assets/**/*.*
+public/assets/**/*.*
+!public/assets/**/.gitkeep
